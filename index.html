@@ -2,41 +2,120 @@
 <html>
 <head>
 <title>ZiyahHair</title>
+
 <style>
+
 body{
 font-family:Arial;
-text-align:center;
-padding:40px;
 background:black;
 color:white;
+text-align:center;
+padding:40px;
 }
+
+h1{
+font-size:40px;
+margin-bottom:5px;
+}
+
+.container{
+max-width:600px;
+margin:auto;
+}
+
+.service{
+padding:12px;
+border-bottom:1px solid #333;
+}
+
 button{
-padding:15px 25px;
+margin-top:20px;
+padding:15px 30px;
 font-size:18px;
 border-radius:10px;
 border:none;
 background:white;
 color:black;
+cursor:pointer;
 }
+
+.gallery img{
+width:100%;
+border-radius:10px;
+margin-top:15px;
+}
+
+.calendar{
+margin-top:30px;
+}
+
+input, select{
+padding:10px;
+margin:10px;
+border-radius:6px;
+border:none;
+width:80%;
+}
+
 </style>
+
 </head>
 
 <body>
+
+<div class="container">
 
 <h1>ZiyahHair</h1>
 <p>Luxury Hair Appointments</p>
 
 <h2>Services</h2>
 
-<p>Wig Install — $150</p>
-<p>Closure Install — $130</p>
-<p>Ponytail — $80</p>
-<p>Quick Weave — $130</p>
-<p>Sew In — $175</p>
+<div class="service">Wig Install — $150</div>
+<div class="service">Closure Install — $130</div>
+<div class="service">Ponytail — $80</div>
+<div class="service">Quick Weave — $130</div>
+<div class="service">Sew In — $175</div>
 
 <p>$25 Deposit Required To Book</p>
 
-<button>Book Appointment</button>
+<h2>Book Appointment</h2>
+
+<div class="calendar">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email">
+
+<select>
+<option>Select Service</option>
+<option>Wig Install</option>
+<option>Closure Install</option>
+<option>Ponytail</option>
+<option>Quick Weave</option>
+<option>Sew In</option>
+</select>
+
+<input type="date">
+
+<br>
+
+<button onclick="window.open('https://buy.stripe.com','_blank')">
+Pay $25 Deposit
+</button>
+
+</div>
+
+<h2>Hair Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+
+<img src="https://images.unsplash.com/photo-1595475038784-bbe439ff41e6">
+
+</div>
+
+</div>
 
 </body>
 </html>
